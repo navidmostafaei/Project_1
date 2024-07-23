@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    animation: start_site 2s ease-in-out;
+    -webkit-animation: start_site 2s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    margin: 50px 0;
+    height: 2px;
+    background-color: #d4d4d4;
+    color: #d4d4d4;
+    border-style: none;
+}
+
+/*----------------Header Style----------------*/
+.header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header_nav_bar {
+    width: 100%;
+    display: flex;
+
+}
+
+.logo_nav {
+    margin: 0 20px;
+}
+
+.logo_nav img {
+    width: 80px;
+    height: 50px;
+    margin: 10px 10px;
+}
+
+.navbar_menu {
+    display: flex;
+    margin: 20px auto;
+}
+
+.header_nav_bar .navbar_menu nav {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.header_nav_bar .navbar_menu nav li {
+    list-style-type: none;
+    font-size: 17px;
+}
+
+.phone_num {
+    float: right;
+    display: flex;
+}
+
+.social_nav {
+    display: inline-flex;
+    justify-content: right;
+    margin-left: 100px;
+    gap: 3rem;
+}
+
+.social_nav .social_logo a {
+    font-size: 23px;
+    margin-left: 20px
+}
+
+.navbar_menu nav li a,
+.navbar_menu .social_nav .phone_num a,
+.navbar_menu .social_nav .social_logo a {
+    color: rgb(55, 54, 54);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+/*----------------HOVER Navbar----------------*/
+.navbar_menu nav li:hover a,
+.navbar_menu .social_nav .phone_num a:hover,
+.navbar_menu .social_nav .social_logo a:hover {
+    color: #6a9063;
+}
+
+.header_text {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: auto 125px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    animation: ;
+    -webkit-animation: translate_header_text 2s ease-in-out;
+}
+
+.header_text .left_text {
+    font-size: 30px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin-left: -120px;
+    line-height: 65px;
+}
+
+.header_text .right_text {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.header_text .right_text p {
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.header_text .right_text button {
+    color: aliceblue;
+    background-color: #6a9063;
+    padding: 10px 30px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.header_text .right_text button:hover {
+    background-color: #526c4d;
+}
+
+.header_pic {
+    width: 100%;
+    height: 500px;
+    animation: up_header_pic 1.5s ease-in;
+    -webkit-animation: up_header_pic 1.5s ease-in;
+}
+
+/*----------------About US Style----------------*/
+.about_us {
+    margin: 50px 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: translate_header_text 2s ease-out;
+    -webkit-animation: translate_header_text 2s ease-out;
+}
+
+.about_us h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.about_us p {
+    line-height: 30px;
+    font-weight: 500;
+    color: rgb(104, 104, 104);
+}
+
+.about_us .our_facilities {
+    margin-top: 60px;
+    margin-bottom:60px;
+    display: flex;
+    flex-direction: row;
+    animation: translate_header_text 2s ease-out;
+    -webkit-animation: translate_header_text 2s ease-out;
+}
+
+.about_us .our_facilities li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+    margin: 0 auto;
+}
+
+.about_us .our_facilities li p {
+    margin-top: -50px;
+    color: rgb(104, 104, 104);
+    font-weight: 600;
+}
+
+/* ----------------Each house has Style----------------*/
+
+.each_house_has {
+    margin: 80px 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.each_house_has h2 {
+    font-size: 40px;
+}
+
+.each_house_has .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.each_house_has .Each_house_has_box {
+    width: 360px;
+    border: #b6cab3 2px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 30px 40px;
+    margin-bottom: auto;
+}
+
+.each_house_has .each_house_has_box h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.each_house_has .each_house_has_box li {
+    margin-top: 10px;
+}
+
+/*----------------Footer Style----------------*/
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: #526c4d;
+}
+
+
+
+.footer_logo img {
+    width: 110px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.footer footer {
+    display: flex;
+}
+
+footer {
+    padding-top: 30px;
+}
+
+.footer footer {
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer footer .navigation,
+.footer footer .information {
+    padding: 20px 80px;
+}
+
+.footer footer .navigation nav li a,
+.footer footer .information {
+    color: #b6cab3;
+    line-height: 40px;
+}
+
+.footer footer .information {
+    line-height: 27px;
+}
+
+
+.footer footer .information #title_information {
+    color: white;
+    line-height: 20px;
+}
+
+.social_logo_footer {
+    margin-top: 10px;
+}
+
+.social_logo_footer a {
+    color: white;
+    font-size: 27px;
+    margin: 0px 10px;
+}
+
+.footer .guidance_request_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 18px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+.footer .guidance_request_box h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer .guidance_request_box {
+    font-size: 13px;
+    color: #cadcc7;
+}
+
+.footer .guidance_request_box input {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    width: 310px;
+    height: 45px;
+    background-color: rgb(233, 233, 233);
+    padding: 0 10px;
+    outline: none;
+    border-style: none;
+
+}
+
+.footer .guidance_request_box input::placeholder {
+    color: rgb(188, 188, 188);
+    padding: 10px;
+}
+
+.footer .guidance_request_box button {
+    margin: 0 5.3rem;
+    padding: 10px 15px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    outline: none;
+    border-style: none;
+    background-color: #334430;
+    color: #b6cab3;
+    cursor: pointer;
+}
+
+
+/* Animation*/
+@keyframes start_site {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+
+    }
+}
+
+@keyframes translate_header_text {
+    0% {
+        transform: translateX(-30rem);
+        -webkit-transform: translateX(-30rem);
+        -moz-transform: translateX(-30rem);
+        -ms-transform: translateX(-30rem);
+        -o-transform: translateX(-30rem);
+    }
+
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
+
+@keyframes up_header_pic {
+    0% {
+        transform: translateY(10rem);
+        -webkit-transform: translateY(10rem);
+        -moz-transform: translateY(10rem);
+        -ms-transform: translateY(10rem);
+        -o-transform: translateY(10rem);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
