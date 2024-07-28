@@ -177,4 +177,20 @@
     .question_right {
         width: 30%;
     }
+    .question_right .box_questions{
+        width: 350px;
+    }
+    .question_right .box_questions form{
+        margin: 0;
+        height: auto;
+    }
+    .question_right .box_questions form input{
+        width: 250px;
+
+    }
+    .question_right .box_questions form button{
+        margin: 2rem 3rem;
+        padding: 15px 10px;
+    }
+    
 }
