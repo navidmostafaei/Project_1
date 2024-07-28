@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forest House Reserve</title>
         <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="Responsive.css">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,6 +25,18 @@
                             <li><a href="#">Location</a></li>
                             <li><a href="#">Contacts</a></li>
                         </nav>
+                        <div class="nav_mobile">
+                            <input type="checkbox" id="toggle_nav" hidden>
+                            <label for="toggle_nav"><i class="fa fa-align-justify"></i></label>
+                            <ul class="list_nav_mobile">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Houses</a></li>
+                                <li><a href="#">Convenience</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Location</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
                         <div class="social_nav">
                             <div class="phone_num">
                                 <a href="tel:380731195994">(380)73-11-95-994</a>
@@ -131,6 +144,75 @@
                     <li>- Hammock</li>
                     <li>- Parking lot</li>
                     <li>- Pet friendly</li>
+                </div>
+                <div class="Each_house_has_box" id="box5">
+                    <h3>BATHROOM</h3>
+                    <li>- Shower</li>
+                    <li>- Toilet</li>
+                    <li>- Hairdryer</li>
+                    <li>- Towels</li>
+                    <li>- Shower gel/shampoo/conditioner</li>
+                </div>
+                <div class="Each_house_has_box" id="box4">
+                 <img src="Pic/pic-box1.png" alt="pic-box1" width="300" height="200px">
+                </div>
+                <div class="Each_house_has_box" id="box6">
+                    <img src="Pic/pic-box2.png" alt="pic-box1" width="300" height="200px">
+                   </div>
+                
+            </div>
+
+        </div>
+        <div class="frequently_asked_questions">
+            <h2>frequently asked questions</h2><br>
+            <div class="questions_container">
+                <div class="question_left">
+                    <hr>
+                    <details>
+                        <summary>Is it possible to cancel a reservation and how is it done?</summary>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, porro nostrum omnis ab excepturi velit quas commodi cumque perferendis soluta sapiente nam reiciendis ut dolorem sunt quis necessitatibus earum ratione.
+                        Magnam beatae dolor adipisci in quos nobis eveniet libero laudantium aliquid fugiat nam enim, autem illo? Repudiandae, inventore. Quidem blanditiis commodi repellendus sit laudantium aperiam possimus accusantium placeat magni velit.</p>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>What are the rules regarding quiet time and behavior on the territory?</summary>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, quod consequuntur quidem recusandae quasi porro maiores at unde, sunt rem incidunt laboriosam dignissimos dicta, cumque ratione nam nesciunt illum cupiditate?</p>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>How far is the nearest infrastructure (shops,etc)?</summary>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, quod consequuntur quidem recusandae quasi porro maiores at unde, sunt rem incidunt laboriosam dignissimos dicta, cumque ratione nam nesciunt illum cupiditate?</p>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>Can I bring my own food and drinks to the lodge?</summary>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, quod consequuntur quidem recusandae quasi porro maiores at unde, sunt rem incidunt laboriosam dignissimos dicta, cumque ratione nam nesciunt illum cupiditate?</p>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>Can I bring my own food and drinks to the lodge?</summary>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, quod consequuntur quidem recusandae quasi porro maiores at unde, sunt rem incidunt laboriosam dignissimos dicta, cumque ratione nam nesciunt illum cupiditate?</p>
+                    </details>
+                    <hr>
+                </div>
+                <div class="question_right">
+                    <div class="box_questions">
+                        <h2>do you have any questions?</h2>
+                        <h5>fill out the form below and our manager will contact you shortly!</h5>
+                        <form>
+                            *Name
+                            <br>
+                            <input type="text" placeholder="Jackson">
+                            <br><br>
+                            *Phone number
+                            <br>
+                            <input type="tel" placeholder="(380)11-11-11-11"><br><br>
+                            *Comment [Optional]
+                            <input  id="comment_input" type="text" placeholder="Comment...">
+                            <button type="submit" oneclick="alert('Submit your information')">Send a message</button>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
 

@@ -28,8 +28,13 @@ hr {
 /*----------------Header Style----------------*/
 .header {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    height: auto;
+    /*overflow: hidden;*/
+}
+
+.nav_mobile label {
+    display: none;
 }
 
 .header_nav_bar {
@@ -55,7 +60,7 @@ hr {
 
 .header_nav_bar .navbar_menu nav {
     display: flex;
-    gap: 1.8rem;
+    gap: 3.5rem;
 }
 
 .header_nav_bar .navbar_menu nav li {
@@ -153,7 +158,7 @@ hr {
 
 .header_pic {
     width: 100%;
-    height: 500px;
+    height: auto;
     animation: up_header_pic 1.5s ease-in;
     -webkit-animation: up_header_pic 1.5s ease-in;
 }
@@ -179,7 +184,7 @@ hr {
 
 .about_us .our_facilities {
     margin-top: 60px;
-    margin-bottom:60px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: row;
     animation: translate_header_text 2s ease-out;
@@ -210,6 +215,7 @@ hr {
 
 .each_house_has h2 {
     font-size: 40px;
+    margin-bottom: 70px;
 }
 
 .each_house_has .box {
@@ -217,7 +223,7 @@ hr {
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .each_house_has .Each_house_has_box {
@@ -228,7 +234,7 @@ hr {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    padding: 30px 40px;
+    padding: 40px 40px;
     margin-bottom: auto;
 }
 
@@ -241,14 +247,139 @@ hr {
     margin-top: 10px;
 }
 
+.each_house_has #box4,
+.each_house_has #box6 {
+    padding: 0;
+    overflow: hidden;
+    width: 360px;
+}
+
+.each_house_has #box4 img,
+.each_house_has #box6 img {
+    width: 360px;
+}
+
+/*----------------Asked_Questions----------------*/
+.frequently_asked_questions {
+    margin: 50px 70px;
+    cursor: default;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.frequently_asked_questions .questions_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.frequently_asked_questions .question_left {
+    width: 55%;
+}
+
+.frequently_asked_questions h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.frequently_asked_questions hr {
+    margin: 35px 0;
+}
+
+.frequently_asked_questions .question_left details summary {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(43, 43, 43);
+}
+
+.frequently_asked_questions .question_left details p {
+    margin-top: 20px;
+    line-height: 28px;
+    color: rgb(68, 68, 68);
+}
+
+.question_right {
+    width: 40%;
+}
+
+.question_right .box_questions {
+    width: 500px;
+    height: 500px;
+    background-color: #61845a;
+    color: #b6cab3;
+    margin: 2rem auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 40px;
+}
+
+.question_right .box_questions h2 {
+    color: #d6e9d3;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.question_right .box_questions h5 {
+    color: #f0f5ef;
+    font-weight: 300;
+    text-align: center;
+    margin: -20px 0;
+}
+
+.question_right .box_questions form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 40px;
+}
+
+.question_right .box_questions form input {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    width: 310px;
+    height: 45px;
+    background-color: rgb(233, 233, 233);
+    padding: 0 10px;
+    outline: none;
+    border-style: none;
+    margin-bottom: -20px;
+}
+
+.question_right .box_questions form #comment_input {
+    height: 90px;
+    padding-bottom: 40px;
+    overflow-wrap: break-word;
+    word-break: keep-all
+}
+
+.question_right .box_questions form button {
+    margin: 2.5rem 5.3rem;
+    padding: 15px 20px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    outline: none;
+    border-style: none;
+    background-color: #334430;
+    color: #b6cab3;
+    cursor: pointer;
+}
+
 /*----------------Footer Style----------------*/
 .footer {
     width: 100%;
     height: 400px;
     background-color: #526c4d;
 }
-
-
 
 .footer_logo img {
     width: 110px;
@@ -258,6 +389,7 @@ hr {
 
 .footer footer {
     display: flex;
+    margin: 0 auto;
 }
 
 footer {
@@ -272,6 +404,7 @@ footer {
 .footer footer .navigation,
 .footer footer .information {
     padding: 20px 80px;
+    margin: 0 auto;
 }
 
 .footer footer .navigation nav li a,
@@ -307,6 +440,7 @@ footer {
     gap: 2rem;
     margin-top: 18px;
     margin-left: 50px;
+    margin-right: 70px;
     overflow: hidden;
 }
 
