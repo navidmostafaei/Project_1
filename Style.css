@@ -7,6 +7,7 @@
 body {
     animation: start_site 2s ease-in-out;
     -webkit-animation: start_site 2s ease-in-out;
+    min-width:524px;
 }
 
 a {
