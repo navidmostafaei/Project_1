@@ -185,8 +185,8 @@
         height: auto;
     }
     .question_right .box_questions form input{
-        width: 250px;
-
+        min-width: 200px;
+        width:auto;
     }
     .question_right .box_questions form button{
         margin: 2rem 3rem;
