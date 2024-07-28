@@ -33,10 +33,6 @@ hr {
     /*overflow: hidden;*/
 }
 
-.nav_mobile label {
-    display: none;
-}
-
 .header_nav_bar {
     width: 100%;
     display: flex;

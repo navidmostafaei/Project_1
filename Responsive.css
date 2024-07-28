@@ -36,7 +36,6 @@
     .each_house_has #box5 {
         margin: -10px 0 0 0;
     }
-
 }
 
 #toggle_nav:checked+label+ul {
@@ -45,6 +44,12 @@
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
+}
+
+@media screen and (min-width: 800px) {
+    .nav_mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -132,51 +137,44 @@
         display: none;
     }
 
-}
+    .list_nav_mobile {
+        position: fixed;
+        background-color: #f3f3f3;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 200px;
+        transform: translateX(-300px);
+        transition: all 500ms ease-out;
+        -webkit-transform: translateX(-300px);
+        -moz-transform: translateX(-300px);
+        -ms-transform: translateX(-300px);
+        -o-transform: translateX(-300px);
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        border: 2px solid rgb(47, 103, 58);
+    }
 
-.nav_mobile {
-    display: block;
-}
-.nav_mobile label {
-    display: block;
-}
+    .list_nav_mobile li {
+        margin: 20px;
+    }
 
+    .list_nav_mobile li a {
+        color: rgb(78, 78, 78);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+    }
 
-.list_nav_mobile {
-    position: fixed;
-    background-color: #f3f3f3;
-    height: 100%;
-    top: 0;
-    left:0;
-    width: 200px;
-    transform: translateX(-300px);
-    transition: all 500ms ease-out;
-    -webkit-transform: translateX(-300px);
-    -moz-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    -o-transform: translateX(-300px);
-    text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: start;
-    border: 2px solid rgb(47, 103, 58);
-}
-.list_nav_mobile li{
-    margin: 20px;
-}
-.list_nav_mobile li a {
-    color: rgb(78, 78, 78);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-}
+    label {
+        position: relative;
+        right: -100px;
+        top: 5px;
+        font-size: 25px;
+    }
 
-label {
-    position: relative;
-    right: -100px;
-    top: 5px;
-    font-size: 25px;
-}
-
-.question_right{
-    width: 30%;
+    .question_right {
+        width: 30%;
+    }
 }
