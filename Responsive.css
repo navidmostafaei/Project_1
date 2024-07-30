@@ -7,6 +7,14 @@
         height: auto;
     }
 
+    .phone_num {
+        display: none;
+    }
+
+    .social_nav {
+        display: none;
+    }
+
     .frequently_asked_questions .questions_container {
         flex-direction: column;
         align-items: center;
@@ -60,7 +68,7 @@
     .header_text {
         flex-wrap: wrap;
         text-align: center;
-        margin-top: 50px;
+        margin: 50px 60px;
     }
 
     .header_text .left_text {
@@ -68,7 +76,7 @@
     }
 
     .header_pic {
-        height: auto;
+        height: auto
     }
 
     .about_us .our_facilities {
@@ -104,10 +112,6 @@
         color: rgb(227, 228, 228);
     }
 
-    .each_house_has #box5 {
-        margin-top: 100px;
-    }
-
     .frequently_asked_questions .questions_container {
         flex-direction: column;
     }
@@ -140,8 +144,8 @@
     .list_nav_mobile {
         position: fixed;
         background-color: #f3f3f3;
-        height: 100%;
-        top: 0;
+        height: 99%;
+        top: 0.3%;
         left: 0;
         width: 200px;
         transform: translateX(-300px);
@@ -154,11 +158,22 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: start;
-        border: 2px solid rgb(47, 103, 58);
+        border: 1px solid rgb(47, 103, 58);
+        border-radius: 0 50px 50px 0;
+        -webkit-border-radius: 0 50px 50px 0;
+        -moz-border-radius: 0 50px 50px 0;
+        -ms-border-radius: 0 50px 50px 0;
+        -o-border-radius: 0 50px 50px 0;
+        -webkit-transition: all 500ms ease-out;
+        -moz-transition: all 500ms ease-out;
+        -ms-transition: all 500ms ease-out;
+        -o-transition: all 500ms ease-out;
+        padding-top: 30px;
+
     }
 
     .list_nav_mobile li {
-        margin: 20px;
+        margin: 20px 0;
     }
 
     .list_nav_mobile li a {
@@ -168,29 +183,39 @@
     }
 
     label {
-        position: relative;
-        right: -100px;
+        position: absolute;
+        right: 0;
         top: 5px;
         font-size: 25px;
+        margin: 15px 30px;
+    }
+
+    .frequently_asked_questions {
+        margin: 0 10px;
     }
 
     .question_right {
-        width: 30%;
+        width: 50%;
+        margin: 0 auto;
     }
-    .question_right .box_questions{
-        width: 350px;
+
+    .question_right .box_questions {
+        width: 330px;
     }
-    .question_right .box_questions form{
+
+    .question_right .box_questions form {
         margin: 0;
         height: auto;
     }
-    .question_right .box_questions form input{
+
+    .question_right .box_questions form input {
         min-width: 200px;
-        width:auto;
+        width: auto;
     }
-    .question_right .box_questions form button{
+
+    .question_right .box_questions form button {
         margin: 2rem 3rem;
         padding: 15px 10px;
     }
-    
+
 }

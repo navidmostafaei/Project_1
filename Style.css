@@ -7,7 +7,7 @@
 body {
     animation: start_site 2s ease-in-out;
     -webkit-animation: start_site 2s ease-in-out;
-    min-width:524px;
+    min-width: 200px;
 }
 
 a {
@@ -29,7 +29,7 @@ hr {
 /*----------------Header Style----------------*/
 .header {
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     height: auto;
     /*overflow: hidden;*/
 }
