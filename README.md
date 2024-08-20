@@ -1,5 +1,5 @@
 
-<a href="https://htmlpreview.github.io/?https://github.com/navidmocer/Frontend/blob/Forest-House-Website/Index.html" style="text-decoration:none; text-align:center; font-weight:bold;">View project</a>
+<a href="https://htmlpreview.github.io/?https://github.com/navidmocer/Frontend/blob/Forest-House-Website/Index.html" style="text-decoration:none; text-align:center; font-weight:bold; color: #fff;">View project</a>
 <br>
 <img src="src/1.png">
 <img src="src/2.png">
